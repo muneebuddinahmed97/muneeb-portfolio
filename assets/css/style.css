@@ -396,7 +396,7 @@ main {
 
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
-  font-size: var(--fs-9);
+  font-size: var(--fs-7);
 }
 
 .contact-info address { font-style: normal; }
@@ -433,7 +433,7 @@ main {
   width: 100%;
   background: hsla(240, 1%, 17%, 0.75);
   backdrop-filter: blur(10px);
-  border: 1px solid var(--jet);
+  border: 2px solid var(--jet);
   border-radius: 12px 12px 0 0;
   box-shadow: var(--shadow-2);
   z-index: 5;
@@ -449,7 +449,7 @@ main {
 
 .navbar-link {
   color: var(--light-gray);
-  font-size: var(--fs-8);
+  font-size: var(--fs-7);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
@@ -528,10 +528,6 @@ main {
 }
 
 
-/**
- * #testimonials 
- */
-
 .testimonials { margin-bottom: 30px; }
 
 .testimonials-title { margin-bottom: 20px; }
@@ -578,11 +574,6 @@ main {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
-
-/**
- * #testimonials-modal
- */
 
 .modal-container {
   position: fixed;
