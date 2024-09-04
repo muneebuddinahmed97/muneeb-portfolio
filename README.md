@@ -14,7 +14,7 @@ The first thing that git offers us  - the opportunity to work with "fork", takin
 
 But often, especially on small projects, such complexity in the organization of the repositories is not needed, so we can use "centralized scheme." But the rules of the development and rules of third-party edits adoption is still needed because the organization of the history of the development is comparable with the organization of the code in the project - if you do not pay attention to this, soon nobody will be able to figure it out.
 
-## Why care about the history?
+## Why is it necessary to know & care about the history?
 
 Knowledge of how to deal with the development history is essential and helps to understand how to use our code by ourselves and 3rd-party users. In particular, to answer the questions:
 - How do I participate in the release cycle?
@@ -29,7 +29,7 @@ The aim of this guide is to give the understanding that `git`, `GitHub` and `git
 If you are new to git or not confident enough in how it works, please, refer to any basic git introduction. Our advice is to google up “A Visual Git Reference” and get back here once you’re done!
 
 
-## Basic Terminology
+## Basic Terminologies
 
 So the very important thing is to understand main concepts:
 - `feature` - is a complete piece of functionality, it could be a new feature, hotfix, doc, test, refactoring, and so on;
@@ -85,7 +85,7 @@ This ‘git flow’ is our vision on the perfect way to develop things. But ther
 - `hotfix-*` - development (local);
 
 
-## Branch name conventions
+## Branch name Conventions
 
 Branch names should only contain  `lowercase letters`, `numbers` and `hyphens`,
 regexp: `/[a-z0-9\-]+/` except `UAT` branch
@@ -171,7 +171,7 @@ This flow will be used almost by any branch flow, so pay attention to it!
 <!--5. Feature branch should be deleted while merging `PR`-->
 
 ## Commits guideline
-<!-- Copyright (c) 2013 Nicholas C. Zakas. All rights reserved. -->
+
 **Important**:
 * commits without task id (link for asana) are not allowed (except docs and libs version updates)
 * keep application version bump as separate commits
@@ -359,4 +359,3 @@ Pay attention to Feature Branching with Pull Requests
 1. [Semantic Versioning 2.0.0](http://semver.org/)
 2. [Git cheat sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 3. [Github help: user collaborating](https://help.github.com/categories/collaborating/)
-
