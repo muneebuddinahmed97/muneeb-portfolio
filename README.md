@@ -1,4 +1,4 @@
-# Understanding the    GitHub Flow
+# Understanding GitHub Flow
 
 ## Introduction
 First things first, why do we even need workflow for working with git?
