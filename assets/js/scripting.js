@@ -1,10 +1,19 @@
+'use strict';
+
+const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+
+const sidebar = document.querySelector("[data-sidebar]");
+const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+
+sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+
+// Navigation Logic
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// Add event to all nav links
 navigationLinks.forEach((link) => {
   link.addEventListener("click", function () {
-    const targetPage = this.getAttribute("data-nav-link"); // Get the target page from data-nav-link
+    const targetPage = this.getAttribute("data-nav-link");
 
     // Remove active class from all pages and links
     pages.forEach((page) => page.classList.remove("active"));
